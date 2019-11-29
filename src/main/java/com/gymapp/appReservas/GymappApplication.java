@@ -1,4 +1,4 @@
-package com.gymapp.gymapp;
+package com.gymapp.appReservas;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
