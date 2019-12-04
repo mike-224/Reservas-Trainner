@@ -20,10 +20,10 @@ public interface ClienteRepository extends JpaRepository<Cliente, String> {
 
     /**
      * Aquí definimos el método para buscar clientes según su ID
-     * @param identificacionCli
+     * @param idCli
      * @return
      */
-    public Cliente findByIdentificacion(String identificacionCli);
+    public Cliente findByIdentificacion(String idCli);
 
     /**
      * Aquí definimos el método para buscar clientes según su email

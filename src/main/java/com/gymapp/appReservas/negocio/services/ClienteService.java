@@ -51,11 +51,11 @@ public class ClienteService {
 
     /**
      * Metodo para buscar un cliente según su ID
-     * @param identificacionCli
+     * @param idCli
      * @return
      */
-    public Cliente findByIdentificacion(String identificacionCli) {
-        return this.clienteRepository.findByIdentificacion(identificacionCli);
+    public Cliente findByIdentificacion(String idCli) {
+        return this.clienteRepository.findByIdentificacion(idCli);
     }
 
     public List<Cliente> findAll(){

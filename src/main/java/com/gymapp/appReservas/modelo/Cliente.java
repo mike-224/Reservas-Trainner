@@ -15,7 +15,7 @@ import java.util.Set;
 @Data
 @Entity
 @Table(name = "cliente")
-@NamedQuery(name="Cliente.findByIdentificacion", query="select c from Cliente c where c.identificacionCli = ?1")
+@NamedQuery(name="Cliente.findByIdentificacion", query="select c from Cliente c where c.idCli = ?1")
 public class Cliente {
     @Id
     @GeneratedValue(generator = "system-uuid")

@@ -69,8 +69,9 @@ public class ClienteResource {
     @DeleteMapping("/{identificacion}")
     @ApiOperation(value = "Eliminar cliente", notes = "Servicio para eliminar a un cliente")
     @ApiResponses(value = {@ApiResponse(code = 201, message = "Cliente eliminado correctamente"),
-    @ApiResponse(code=400, message = "Cliente no encontrdo") })
+    @ApiResponse(code=404, message = "Cliente no encontrdo") })
     public void removeCliente(@PathVariable("identificacion") String identificacion) {
+        System.out.println("Id"+identificacion);
         Cliente cliente = this.clienteService.findByIdentificacion(identificacion);
         if (cliente != null) {
             this.clienteService.delete(cliente);
