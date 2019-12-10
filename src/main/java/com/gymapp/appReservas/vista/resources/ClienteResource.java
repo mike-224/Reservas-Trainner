@@ -18,6 +18,7 @@ import java.util.List;
  * Clase para activar la API Rest de la clase cliente
  * @author MIKE224
  */
+@CrossOrigin(origins = { "http://localhost:3000", "http://localhost:4200", "http://localhost:8080"})
 @RestController
 @RequestMapping("/api/cliente")
 @Api(tags= "cliente")
